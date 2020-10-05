@@ -97,43 +97,41 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+    /* 8 normal colors */
+    "#3b4251", /* black   */
+    "#bf6069", /* red     */
+    "#a3be8b", /* green   */
+    "#ebcb8a", /* yellow  */
+    "#81a1c1", /* blue    */
+    "#b48dac", /* magenta */
+    "#88c0d0", /* cyan    */
+    "#e5e9f0", /* white   */
 
-    "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-    "#fb4934", /* red     */
-    "#b8bb26", /* green   */
-    "#fabd2f", /* yellow  */
-    "#8ec07c", /* cyan    */
-    "#d3869b", /* magenta */
-    "#83a598", /* blue    */
-    "#fbf1c7", /* white   */
-
-    "#928374", /* black   */
-    "#cc241d", /* red     */
-    "#98971a", /* green   */
-    "#d79921", /* yellow  */
-    "#689d6a", /* cyan    */
-    "#b16286", /* magenta */
-    "#458588", /* blue    */
-    "#fbf1c7", /* white   */
+    /* 8 bright colors */
+    "#4c566a", /* black   */
+    "#bf6069", /* red     */
+    "#a3be8b", /* green   */
+    "#ebcb8a", /* yellow  */
+    "#81a1c1", /* blue    */
+    "#b48eac", /* magenta */
+    "#88c0d0", /* cyan    */
+    "#e5e9f0", /* white   */
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
-    // "#2e3340", /* background */
-    "#282828", /* background */
-    "#fbf1c7", /* foreground   */
+    "#2e3340", /* background */
+    "#d8dee8", /* foreground */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultbg = 256;
 unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
 static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 256;
-
-
 
 /*
  * Default shape of cursor
@@ -142,7 +140,7 @@ static unsigned int defaultrcs = 256;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
@@ -474,42 +472,3 @@ static uint selmasks[] = {
 static char ascii_printable[] = " !\"#$%&'()*+,-./0123456789:;<=>?"
                                 "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
                                 "`abcdefghijklmnopqrstuvwxyz{|}~";
-
-/*  Nord color scheme  */
-/* static const char *colorname[] = { */
-/*     /\* 8 normal colors *\/ */
-/*     "#3b4251", /\* black   *\/ */
-/*     "#bf6069", /\* red     *\/ */
-/*     "#a3be8b", /\* green   *\/ */
-/*     "#ebcb8a", /\* yellow  *\/ */
-/*     "#81a1c1", /\* blue    *\/ */
-/*     "#b48dac", /\* magenta *\/ */
-/*     "#88c0d0", /\* cyan    *\/ */
-/*     "#e5e9f0", /\* white   *\/ */
-
-/*     /\* 8 bright colors *\/ */
-/*     "#4c566a", /\* black   *\/ */
-/*     "#bf6069", /\* red     *\/ */
-/*     "#a3be8b", /\* green   *\/ */
-/*     "#ebcb8a", /\* yellow  *\/ */
-/*     "#81a1c1", /\* blue    *\/ */
-/*     "#b48eac", /\* magenta *\/ */
-/*     "#88c0d0", /\* cyan    *\/ */
-/*     "#e5e9f0", /\* white   *\/ */
-
-/*     [255] = 0, */
-
-/*     /\* more colors can be added after 255 to use with DefaultXX *\/ */
-/*     // "#2e3340", /\* background *\/ */
-/*     "#2c253b", /\* background *\/ */
-/*     "#d8dee8", /\* foreground *\/ */
-/* }; */
-
-/* /\* */
-/*  * Default colors (colorname index) */
-/*  * foreground, background, cursor, reverse cursor */
-/*  *\/ */
-/* unsigned int defaultfg = 257; */
-/* unsigned int defaultbg = 256; */
-/* static unsigned int defaultcs = 257; */
-/* static unsigned int defaultrcs = 256; */

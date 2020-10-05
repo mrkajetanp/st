@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Hack Nerd Font:size=10";
+static int borderpx = 6;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -98,30 +98,30 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#3b4252", /* black   */
-	"#bf616a", /* red     */
-	"#a3be8c", /* green   */
-	"#ebcb8b", /* yellow  */
+	"#3b4251", /* black   */
+	"#bf6069", /* red     */
+	"#a3be8b", /* green   */
+	"#ebcb8a", /* yellow  */
 	"#81a1c1", /* blue    */
-	"#b48ead", /* magenta */
+	"#b48dac", /* magenta */
 	"#88c0d0", /* cyan    */
 	"#e5e9f0", /* white   */
 
 	/* 8 bright colors */
 	"#4c566a", /* black   */
-	"#bf616a", /* red     */
-	"#a3be8c", /* green   */
-	"#ebcb8b", /* yellow  */
+	"#bf6069", /* red     */
+	"#a3be8b", /* green   */
+	"#ebcb8a", /* yellow  */
 	"#81a1c1", /* blue    */
-	"#b48ead", /* magenta */
-	"#8fbcbb", /* cyan    */
-	"#eceff4", /* white   */
+	"#b48eac", /* magenta */
+	"#88c0d0", /* cyan    */
+	"#e5e9f0", /* white   */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#2e3440", /* background */
-	"#d8dee9", /* foreground */
+	"#2e3340", /* background */
+	"#d8dee8", /* foreground */
 };
 
 
